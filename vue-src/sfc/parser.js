@@ -1,5 +1,5 @@
 /* @flow */
-
+// 将Vue文件编译为JavaScript对象
 import deindent from 'de-indent'
 import { parseHTML } from 'compiler/parser/html-parser'
 import { makeMap } from 'shared/util'

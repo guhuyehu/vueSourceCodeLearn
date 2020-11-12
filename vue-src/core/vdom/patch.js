@@ -713,6 +713,7 @@ export function createPatchFunction (backend) {
         /*取代现有元素*/
         const oldElm = oldVnode.elm
         const parentElm = nodeOps.parentNode(oldElm)
+        // createElm的作用就是把VNode挂载到真实的DOM上
         createElm(
           vnode,
           insertedVnodeQueue,

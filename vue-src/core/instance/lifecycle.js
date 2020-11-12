@@ -57,6 +57,7 @@ export function lifecycleMixin (Vue: Class<Component>) {
     }
     const prevEl = vm.$el
     const prevVnode = vm._vnode
+    // 当我们每次调用update的时候 先用prevActiveInstance保存一下当前的VM 再把要更新的VM赋值给activeInstance
     const prevActiveInstance = activeInstance
     activeInstance = vm
     vm._vnode = vnode

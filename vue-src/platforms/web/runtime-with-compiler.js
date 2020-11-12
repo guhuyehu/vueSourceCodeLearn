@@ -27,7 +27,7 @@ Vue.prototype.$mount = function (
   /* istanbul ignore if */
   if (el === document.body || el === document.documentElement) {
     process.env.NODE_ENV !== 'production' && warn(
-      `Do not mount Vue to <html> or <body> - mount to normal elements instead.`
+      `Do not mount Vue to <html> or <body> - mount to normal elements instead.` // 如果是HTML或者body会把整个body覆盖
     )
     return this
   }
